@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Dropdown Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="field">
+            <label for="nationDropdown">Nation:</label>
+            <select id="nationDropdown">
+                <option value="">Select a nation</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label for="weight">Weight (in grams):</label>
+            <input type="text" id="weight">
+        </div>
+    </div>
+
+    <div class="container">
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>First 250</th>
+                <th>Next 250</th>
+                <th>Calculated Tariff</th>
+            </tr>
+            <tr>
+                <td>India Post EMS</td>
+                <td id="emsFirst250"></td>
+                <td id="emsNext250"></td>
+                <td id="emsCalculatedValue"></td>
+            </tr>
+            <tr>
+                <td>India Post Parcel</td>
+                <td id="parcelFirst250"></td>
+                <td id="parcelNext250"></td>
+                <td id="parcelCalculatedValue"></td>
+            </tr>
+            <tr>
+                <td>ITPS</td>
+                <td id="itpsFirst50"></td>
+                <td id="itpsNext50"></td>
+                <td id="itpsCalculatedValue"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
